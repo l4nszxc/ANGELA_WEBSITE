@@ -80,20 +80,25 @@ small,
 }
 
 .brand-logo {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem !important;
+  height: 2rem !important;
+  min-width: 2rem;
+  min-height: 2rem;
   object-fit: cover;
   border-radius: 999px;
   box-shadow: var(--shadow);
   border: 2px solid rgba(255, 255, 255, 0.75);
+  flex: 0 0 auto;
 }
 
 .hero-logo {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 4rem !important;
+  height: 4rem !important;
+  min-width: 4rem;
+  min-height: 4rem;
   object-fit: cover;
   border-radius: 999px;
-  border: 3px solid rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow);
 }
 
