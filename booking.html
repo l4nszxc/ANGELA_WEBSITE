@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Angela Coastal Escapes | Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><span class="brand-mark"><i class="bi bi-compass-fill"></i></span> Angela Coastal Escapes</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-1">
+            <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="attractions.html" href="attractions.html">Attractions</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="packages.html" href="packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="gallery.html" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="location.html" href="location.html">Location</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="booking.html" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="guide.html" href="guide.html">Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container py-4 py-lg-5">
+      <section class="page-hero mb-4">
+        <div class="row g-0 align-items-stretch">
+          <div class="col-lg-7 p-4 p-lg-5">
+            <span class="hero-badge mb-3"><i class="bi bi-journal-check"></i> Booking and inquiry</span>
+            <h1 class="display-5 fw-bold mb-3">Send a travel request without collecting sensitive information.</h1>
+            <p class="lead mb-0">This form stores submissions locally in the browser only, which fits a static GitHub Pages project and shows how digital booking can still work offline.</p>
+          </div>
+          <div class="col-lg-5 hero-side" style="background-image:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80');"></div>
+        </div>
+      </section>
+
+      <section class="section-pad pt-0">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+            <div class="form-shell p-4 p-lg-5">
+              <div class="section-kicker mb-2">Inquiry form</div>
+              <h2 class="mb-3">Request a trip quote</h2>
+              <form data-save-inquiry data-form-type="Booking request" class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="name">Full name *</label>
+                  <input class="form-control" id="name" name="name" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="email">Email address *</label>
+                  <input class="form-control" id="email" name="email" type="email" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="phone">Mobile number</label>
+                  <input class="form-control" id="phone" name="phone" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="travelDate">Preferred travel date</label>
+                  <input class="form-control" id="travelDate" name="travelDate" type="date" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="packageName">Package interest</label>
+                  <select class="form-select" id="packageName" name="packageName">
+                    <option>Beginner Island Escape</option>
+                    <option>Cultural Coast Discovery</option>
+                    <option>Premium Slow Travel Retreat</option>
+                    <option>Island Discovery Cruise</option>
+                    <option>General inquiry</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="guests">Number of guests</label>
+                  <select class="form-select" id="guests" name="guests">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3-5</option>
+                    <option>6-10</option>
+                    <option>10+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="message">Message *</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your dates, interests, and any accessibility or pacing needs." required></textarea>
+                </div>
+                <div class="col-12 d-flex flex-wrap gap-2 align-items-center">
+                  <button class="btn btn-brand rounded-pill px-4" type="submit">Save inquiry locally</button>
+                  <a class="btn btn-outline-secondary rounded-pill px-4" href="contact.html">Contact us instead</a>
+                </div>
+                <div class="col-12" data-form-status></div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card-soft p-4 mb-4">
+              <h2 class="h4 mb-3">What happens next</h2>
+              <ul class="list-check ps-3 mb-0">
+                <li>Your inquiry stays on this device and browser only.</li>
+                <li>You can review saved requests below to support the academic project.</li>
+                <li>No SQL, server, or external database is required.</li>
+              </ul>
+            </div>
+            <div class="card-soft p-4">
+              <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                <h2 class="h4 mb-0">Saved inquiries</h2>
+                <button class="btn btn-sm btn-outline-secondary rounded-pill" type="button" data-clear-storage>Clear local data</button>
+              </div>
+              <div class="save-list" data-saved-requests></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer pt-5 pb-4 mt-4">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between gap-2 small footer-muted">
+          <span>&copy; <span data-year></span> Angela Coastal Escapes.</span>
+          <span>Submissions are stored only in localStorage on the visitor's device.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
