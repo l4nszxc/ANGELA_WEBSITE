@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'angela_coastal_escapes_inquiries';
+const STORAGE_KEY = 'sky_shore_beach_resort_inquiries';
 
 function readInquiries() {
   try {
