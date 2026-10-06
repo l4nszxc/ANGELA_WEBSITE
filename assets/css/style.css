@@ -79,6 +79,24 @@ small,
   box-shadow: var(--shadow);
 }
 
+.brand-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.hero-logo {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+}
+
 .hero {
   position: relative;
   overflow: hidden;
